@@ -6,7 +6,7 @@ o ile definiują one podobny zestaw zasobów sprzętowych jak w mikrokontrolerac
 we wszystkich modelach Arduino.
 W repozytorium znajduje się narzędzie, które w prosty sposób umożliwia konwersję mapy
 pinów mikrokontrolera na piny Arduino, zapisanej w arkuszu kalkulacyjnym Libre/OpenOffice na
-nagłówek "arduino_pins.h".
+nagłówek "pins_arduino.h".
 
 wymagania
 ------------
@@ -33,11 +33,11 @@ użytkowanie środowiska Arduino
 użytkowanie narzędzia odstopins.py
 ------------
 * narzędzie znajduje się w katalogu hardware/arduino/tools
-* uruchomienie narzędzia ./odstopins.py -i Arduino-Mobot.ods -o arduino_pins.h -s Mobot -m ATmega128
-  spowoduje wygenerowanie pliku arduino_pins.h w aktualnym katalogu. Plik wygenerowany będzie na podstawie
+* uruchomienie narzędzia ./odstopins.py -i Arduino-Mobot.ods -o pins_arduino.h -s Mobot -m ATmega128
+  spowoduje wygenerowanie pliku pins_arduino.h w aktualnym katalogu. Plik wygenerowany będzie na podstawie
   pliku arkusza Arduino-Mobot.ods z zakładki Mobot tego arkusza dla mikrokontrolera ATmega128. Opcje -i, -s oraz -m
   są wymagane.
-* plik arduino_pins.h służy do mapowania pinów Arduino na piny mikrokontrolera. Opis sposobu w jaki Arduino IDE korzysta
+* plik pins_arduino.h służy do mapowania pinów Arduino na piny mikrokontrolera. Opis sposobu w jaki Arduino IDE korzysta
   z tego pliku można znaleźć na przykład na stronie:
   http://urbanhonking.com/ideasfordozens/2009/05/18/an_tour_of_the_arduino_interna/
 
